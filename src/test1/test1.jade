@@ -1,0 +1,9 @@
+h2 A test directive
+
+.row
+  .col-sm-6
+    input.form-control(ng-model="test.name",placeholder="name")
+
+.row
+  .col-sm-12
+    h3(ng-show="test.name") Hello {{test.name}}
