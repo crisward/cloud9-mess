@@ -1,0 +1,8 @@
+h2 Coffee class
+
+ul
+  li(ng-repeat="thing in cc.things") {{thing}}
+  
+form.form-inline(ng-submit="cc.add()")
+  input.form-control(type="text",ng-model="cc.item")
+  input.btn.btn-primary(type="submit",value="add")
