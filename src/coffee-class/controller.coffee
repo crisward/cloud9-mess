@@ -1,6 +1,6 @@
 module.exports = 
   class coffeeClass
-    things: ['one','two','three']
+    things: ['one','two','three','four']
     item: ""
     
     constructor: ($rootScope)->
@@ -10,3 +10,5 @@ module.exports =
       @things.push(@item) if(@item)
       @item = ""
     
+    remove: (index)->
+      @things.splice(index,1)
