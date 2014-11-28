@@ -5,7 +5,7 @@ In coffee script `this` is represented as `@` so a much simpler syntax is possib
 Ie.
 
 
-```javascript
+```coffeescript
 angular.module 'coffeeMess',[]
 
 .controller 'coffeeMess',->
