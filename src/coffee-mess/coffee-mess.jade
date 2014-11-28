@@ -1,0 +1,8 @@
+h2 test coffeescript directive
+
+ul
+  li(ng-repeat="thing in cm.things") {{thing}}
+  
+form.form-inline(ng-submit="cm.add()")
+  input.form-control(type="text",ng-model="cm.item")
+  input.btn.btn-primary(type="submit",value="add")
