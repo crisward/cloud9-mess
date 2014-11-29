@@ -5,6 +5,7 @@ module.exports = class coffeeClass
   
   constructor: (ThingsDB)->
     @things=[]
+    ThingsDB.query (res)=> @things = res
     
   add: ->
     @things.push(@item) if(@item)

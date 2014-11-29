@@ -12,8 +12,5 @@ table.table.table-striped.table-bordered(style="width:300px")
       td: button.btn.btn-warning(ng-click="cc.remove($index)") &times;
   tfoot
     tr
-      td
-        form(ng-submit="cc.add()")
-          input.form-control(type="text",ng-model="cc.item")
-      td
-        button.btn.btn-primary(ng-click="cc.add()") add
+      td: form(ng-submit="cc.add()"): input.form-control(type="text",ng-model="cc.item")
+      td: button.btn.btn-primary(ng-click="cc.add()") &plus;

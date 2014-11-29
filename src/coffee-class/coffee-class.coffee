@@ -6,7 +6,8 @@ module.exports = angular.module 'coffeeClass',[]
   template: require './template.jade'
   controllerAs: 'cc'
   controller: require './controller.coffee'
-  
+
+.service 'ThingsDB', require './things.coffee'
 
     
   
