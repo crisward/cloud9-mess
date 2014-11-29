@@ -11,6 +11,8 @@ app.use(express.static('client'))
 app.get '/',(req, res)->  
   res.render("index.jade")
 
+app.get '/api/things',(req,res)->
+  res.send(['one','two','three'])
 
 server.listen process.env.PORT,process.env.IP, ->
   addr = server.address();
