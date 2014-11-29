@@ -1,12 +1,12 @@
 //settings
-var srcjs = ['./src/main.coffee'];
-var destjs =['main.js'];
+var srcjs = ['./src/main.coffee','./src/**/*.test.coffee'];
+var destjs =['main.js','tests.js'];
 var srccss = './src/main.styl';
 var allcss = ['./src/**/*.styl','./src/**/*.css']
 var outputfolder = './client/build';
 var karmaCommonConf = {
     browsers: ['PhantomJS'],
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine','sinon'],
     autoWatchBatchDelay:100,
     files: [
       outputfolder+'/tests.js',
@@ -114,5 +114,5 @@ gulp.task('test', function (done) {
 });
 
 
-gulp.task('default',['watchjs','watchcss']);
+gulp.task('default',['watchjs','watchcss','test']);
 gulp.task('production',['prodjs','prodcss']);

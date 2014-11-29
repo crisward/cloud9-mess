@@ -30,7 +30,9 @@
     "karma-jasmine": "~0.1.5",
     "karma-notify-reporter": "~0.1.1",
     "karma-phantomjs-launcher": "~0.1.4",
+    "karma-sinon": "^1.0.4",
     "nib": "~1.0.4",
+    "sinon": "^1.12.1",
     "stripify": "~1.2.0",
     "vinyl-source-stream": "~1.0.0",
     "watchify": "~2.0.0"
